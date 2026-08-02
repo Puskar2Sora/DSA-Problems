@@ -10,9 +10,7 @@
   <img src="https://img.shields.io/badge/Practice-DSA && CP-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
-
 ---
-
 <h2>About This Repository</h2>
 
 <p>
