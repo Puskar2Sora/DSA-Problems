@@ -25,8 +25,8 @@ class Solution {
         Collections.sort(result);
         return result;
     }
-    private void dfs(int u, int p, boolean[] vis, int[] tin, int[] low, 
-                     boolean[] isArticulation, ArrayList<ArrayList<Integer>> adj) {
+    private void dfs(int u, int p, boolean[] vis, int[] tin, int[] low,     
+                    boolean[] isArticulation, ArrayList<ArrayList<Integer>> adj) {
         vis[u] = true;
         tin[u] = low[u] = ++timer;
         int children = 0;
