@@ -9,7 +9,6 @@ class Node {
         right = null;
     }
 }
-
 class Solution {
     public int minTime(Node root, int target) {
         Map<Node, Node> parentMap = new HashMap<>();
