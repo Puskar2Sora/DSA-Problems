@@ -13,7 +13,8 @@ class Solution {
         boolean[] vis = new boolean[V];
         boolean[] isArticulation = new boolean[V]; 
         for (int i = 0; i < V; i++) {
-            if (!vis[i])  dfs(i, -1, vis, tin, low, isArticulation, adj);
+            if (!vis[i])  
+                dfs(i, -1, vis, tin, low, isArticulation, adj);
         }
         ArrayList<Integer> result = new ArrayList<>();
         for (int i = 0; i < V; i++) 
@@ -25,8 +26,8 @@ class Solution {
         Collections.sort(result);
         return result;
     }
-    private void dfs(int u, int p, boolean[] vis, int[] tin, int[] low, 
-                     boolean[] isArticulation, ArrayList<ArrayList<Integer>> adj) {
+    private void dfs(int u, int p, boolean[] vis, int[] tin, int[] low,     
+                    boolean[] isArticulation, ArrayList<ArrayList<Integer>> adj) {
         vis[u] = true;
         tin[u] = low[u] = ++timer;
         int children = 0;

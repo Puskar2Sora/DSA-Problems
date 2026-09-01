@@ -1,17 +1,14 @@
-
 import java.util.*;
 class Node {
     int data;
     Node left;
     Node right;
-
     Node(int data) {
         this.data = data;
         left = null;
         right = null;
     }
 }
-
 class Solution {
     public int minTime(Node root, int target) {
         Map<Node, Node> parentMap = new HashMap<>();
