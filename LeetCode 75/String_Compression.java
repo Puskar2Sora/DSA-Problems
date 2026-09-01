@@ -3,9 +3,9 @@ class String_Compression {
         int write = 0, count = 1;
 
         for (int i = 0; i < chars.length; i++) {
-            if (i + 1 < chars.length && chars[i] == chars[i + 1]) {
+            if (i + 1 < chars.length && chars[i] == chars[i + 1])
                 count++;
-            } else {
+            else {
                 chars[write++] = chars[i];
                 if (count > 1) {
                     for (char c : Integer.toString(count).toCharArray()) {
