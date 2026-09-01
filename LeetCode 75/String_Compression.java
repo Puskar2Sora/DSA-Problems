@@ -7,7 +7,7 @@ class String_Compression {
             else {
                 chars[write++] = chars[i];
                 if (count > 1)
-                    {
+                {
                     for (char c : Integer.toString(count).toCharArray())
                         chars[write++] = c;
                 }
